@@ -15,6 +15,7 @@ public class LoginController {
 
     private final UserDao userDao = new UserDao();
 
+    
     @FXML
     public void onLogin() {
         var u = userDao.auth(usernameField.getText(), passwordField.getText());

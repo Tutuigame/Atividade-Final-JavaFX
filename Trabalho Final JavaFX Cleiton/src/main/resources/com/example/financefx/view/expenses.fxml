@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.financefx.controller.ExpenseController">
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Button text="Dashboard" onAction="#goDashboard" />
+            <Label text=" | " />
+            <Label text="Despesas" styleClass="subtitle" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <Button text="Novo" onAction="#onNew" />
+            <Button text="Salvar" onAction="#onSave" />
+            <Button text="Remover" onAction="#onDelete" />
+        </HBox>
+    </top>
+
+    <center>
+        <SplitPane>
+            <items>
+                <VBox spacing="8">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10" />
+                    </padding>
+                    <TableView fx:id="table" prefWidth="500">
+                        <columns>
+                            <TableColumn fx:id="colDesc" text="Descrição" prefWidth="180" />
+                            <TableColumn fx:id="colCat" text="Categoria" prefWidth="120" />
+                            <TableColumn fx:id="colAmount" text="Valor" prefWidth="100" />
+                            <TableColumn fx:id="colDate" text="Data" prefWidth="120" />
+                        </columns>
+                    </TableView>
+                </VBox>
+
+                <VBox spacing="8">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10" />
+                    </padding>
+                    <TextField fx:id="descField" promptText="Descrição" />
+                    <ComboBox fx:id="catCombo" promptText="Categoria" />
+                    <TextField fx:id="amountField" promptText="Valor (ex: 123.45)" />
+                    <DatePicker fx:id="datePicker" promptText="Data" />
+                    <Label fx:id="formMessage" styleClass="error" />
+                </VBox>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

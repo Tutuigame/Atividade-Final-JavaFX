@@ -1,0 +1,8 @@
+
+.root { -fx-font-family: 'Segoe UI', 'Roboto', sans-serif; }
+.title { -fx-font-size: 24px; -fx-font-weight: bold; }
+.subtitle { -fx-font-size: 16px; -fx-font-weight: bold; }
+.bold { -fx-font-weight: bold; }
+.error { -fx-text-fill: #c0392b; }
+.table-row-cell:filled:selected { -fx-background-color: -fx-accent; }
+Button { -fx-cursor: hand; }

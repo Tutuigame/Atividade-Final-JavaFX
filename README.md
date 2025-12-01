@@ -24,7 +24,7 @@ Senha: `admin`
 
 Tecnologias Utilizadas
 
-- Java 17+
+- Java 21
 - JavaFX
 - SceneBuilder
 - Maven (se aplicável)

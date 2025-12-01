@@ -37,7 +37,6 @@ public class App extends Application {
             throw new RuntimeException("Erro ao carregar FXML: " + fxmlBaseName, e);
         }
     }
-
     public static Stage getPrimaryStage() { return primaryStage; }
 
     public static void main(String[] args) { launch(); }

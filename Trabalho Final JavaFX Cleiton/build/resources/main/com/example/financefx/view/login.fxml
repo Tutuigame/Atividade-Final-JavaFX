@@ -10,7 +10,7 @@
                 <Insets top="20" right="20" bottom="20" left="20" />
             </padding>
             <Label text="FinanceFX" styleClass="title" />
-            <TextField fx:id="usernameField" promptText="Usuário" />
+            <TextField fx:id="usernameField" promptText="Usuario" />
             <PasswordField fx:id="passwordField" promptText="Senha" />
             <Button text="Entrar" onAction="#onLogin" />
             <Label fx:id="message" styleClass="error" />

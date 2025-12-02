@@ -29,3 +29,9 @@ Tecnologias Utilizadas
 - SceneBuilder
 - Maven (se aplicável)
 - Padrão MVC
+
+---
+Autores
+Arthur Thomazoni RA: 60006074
+Lucas de Brum RA: 60008457
+Luiz Otávio de Camargo Sierpinski RA: 60006383
